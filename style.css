@@ -1,0 +1,240 @@
+body {
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0px;
+  width: 100%;
+  height: 50px;
+}
+
+.nav h4 {
+  margin-left: 15px;
+  font-size: 24px;
+  color: #000; 
+  -webkit-text-stroke: 1px gold;
+  letter-spacing: 2px;
+}
+
+.nav .MenuBtn {
+  margin-right: 15px;
+  color: #fff;
+  display: none;
+}
+
+.nav .Right {
+  margin-right: 12px;
+}
+
+.nav .Right .RetRes {
+  font-weight: 440;
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  text-decoration: none;
+  margin-left: 15px;
+  letter-spacing: 1px;
+  background: none;
+  border-radius: 25px;
+  width: 100px;
+  height: 30px;
+
+}
+
+.Main {
+  min-height: 93.5vh;
+  border: .0001px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ProImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid darkred;
+}
+
+.ProImg img {
+  width: auto;
+  height: 100%;
+}
+
+.MainP {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.AboutMe {
+  display: flex;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  width: 80%;
+  overflow: hidden;
+}
+
+.AboutMe h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -1px;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.ContactMe,
+.CheckRepository {
+  font-size: 19px;
+  margin: 2px;
+  border-radius: 25px;
+  font-weight: 440;
+  background: none;
+  width: 200px;
+  height: 50px;
+  color: red;
+}
+
+.MainSkills {
+  height: 500px;
+  border: .001px solid black;
+  width: 100%;
+}
+
+.SkillsHead {
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.SkillsLanguages {
+  width: 100%;
+  height: 200px;
+}
+
+.SkillsLanguages .Html,
+.css,
+.js,
+.gsap,
+.scrollTrigger,
+.github {
+  min-width: 70px;
+  height: 70px;
+  margin-left: 5px;
+  background: #fff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.SkillsLanguages .Html,
+.css,
+.js,
+.gsap {
+  margin-top: 100px;
+}
+
+.SkillsLanguages .scrollTrigger,
+.github {
+  margin-top: 100px;
+}
+
+.SkillsLanguages {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.SkillsLanguages img {
+  width: 45px;
+}
+
+.css img {
+  width: 35px;
+}
+
+.github,
+.scrollTrigger {}
+
+
+.MyProjects{
+  background: #fff;
+  height: 300px;
+  width: 100%;
+  color: red;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.MyProjectsList{
+  color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Project{
+  width: 98%;
+  margin-top: 4px;
+  height: 50px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  background: #fff;
+  overflow: hidden;
+}
+
+.Project:hover{
+  color: #fff;
+  background: black;
+}
+
+.Footer{
+  background: red;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* mobile responsive */
+@media (max-width: 360px) {
+
+  .SkillsLanguages .scrollTrigger,
+  .github {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .SkillsLanguages .scrollTrigger,
+  .github {
+    margin-top: 100px;
+  }
+}
